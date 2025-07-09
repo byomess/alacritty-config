@@ -1,9 +1,8 @@
-import = ["/home/byomess/.config/alacritty/themes/themes/iterm.toml"]
 
 [scrolling]
 history = 65535
 
-[shell]
+[terminal.shell]
 program = "/usr/bin/zsh"
 args = ["--login"]
 
@@ -13,12 +12,12 @@ args = ["--login"]
 [window]
 decorations = "none"
 padding = { x = 0, y = 0 }
-opacity = 0.90
+opacity = 0.9
 # blur = true
 startup_mode = "Maximized"
 
 [font]
-size = 12
+size = 11
 offset = { x = 0, y = 0 }
 normal      = { family = "FiraCode Nerd Font", style = "Medium" }
 # bold        = { family = "FiraCode Nerd Font Mono", style = "Bold" }
@@ -67,3 +66,8 @@ bindings = [
   { key = "Home",     mods = "Shift",         action = "ScrollToTop",       mode = "~Alt" },
   { key = "End",      mods = "Shift",         action = "ScrollToBottom",    mode = "~Alt" },
 ]
+
+[general]
+import = ["/home/byomess/.config/alacritty/themes/themes/iterm.toml"]
+
+[terminal]
